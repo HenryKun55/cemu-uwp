@@ -7,7 +7,7 @@
     <MinimalCoreWin>true</MinimalCoreWin>
     <ProjectGuid>{29479912-6c71-462b-b6a7-c876de247a11}</ProjectGuid>
     <ProjectName>CoreApp1</ProjectName>
-    <RootNamespace>CoreApp1</RootNamespace>
+    <RootNamespace>CemuUWP</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>

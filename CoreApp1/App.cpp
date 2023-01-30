@@ -56,17 +56,12 @@ struct App : implements<App, IFrameworkViewSource, IFrameworkView>
             openPicker.FileTypeFilter().Append(L".wux");
 
             auto file = co_await openPicker.PickSingleFileAsync();
-            if (file)
-            {
-                
-                winrt::hstring Title = L"Agora estudar pra funcionar o core do Cemu!";
-                winrt::Windows::UI::Popups::MessageDialog dialog(file.Path().data(), Title);
-                dialog.ShowAsync();
-
-                /*MainWindow mainWindow;
-                mainWindow.FileLoad(file.Path().data(), wxLaunchGameEvent::INITIATED_BY::GAME_LIST);*/
-
-            }
+            winrt::hstring Title = L"Agora estudar pra funcionar o core do Cemu!";
+            winrt::Windows::UI::Popups::MessageDialog dialog(file.Path().data(), Title);
+            dialog.ShowAsync();
+           
+            /*MainWindow mainWindow;
+               mainWindow.FileLoad(file.Path().data(), wxLaunchGameEvent::INITIATED_BY::GAME_LIST);*/
         }
     }
 
